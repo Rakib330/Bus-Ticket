@@ -15,7 +15,7 @@ namespace BTMS.DataLib.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.24")
+                .HasAnnotation("ProductVersion", "3.1.25")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -52,23 +52,45 @@ namespace BTMS.DataLib.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("BookingCode")
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
+
                     b.Property<DateTime>("BookingDate")
-                        .HasColumnType("date");
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("BookingStatus")
                         .HasColumnType("bit");
 
-                    b.Property<decimal>("FareAmount")
-                        .HasColumnType("money");
+                    b.Property<string>("Customer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
-                    b.Property<int>("NumberOfSeats")
-                        .HasColumnType("int");
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.Property<int>("ScheduleId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("TotalAmount")
-                        .HasColumnType("money");
+                    b.Property<int>("SeatNumber")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TransactionId")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<bool>("isConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("isPaid")
+                        .HasColumnType("bit");
 
                     b.HasKey("BookingId");
 
@@ -102,9 +124,6 @@ namespace BTMS.DataLib.Migrations
                     b.Property<int>("CompanyId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Fare")
-                        .HasColumnType("money");
-
                     b.Property<string>("Features")
                         .HasColumnType("nvarchar(150)")
                         .HasMaxLength(150);
@@ -122,6 +141,9 @@ namespace BTMS.DataLib.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CompanyId")
+                        .HasColumnType("int");
 
                     b.Property<string>("From")
                         .IsRequired()

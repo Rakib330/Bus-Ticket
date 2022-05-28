@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.Data\\BTMS.Data.csproj": {}
+    "R:\\Bus-Ticket\\BTMS.Data\\BTMS.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.DataLib\\BTMS.DataLib.csproj": {
+    "R:\\Bus-Ticket\\BTMS.DataLib\\BTMS.DataLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.DataLib\\BTMS.DataLib.csproj",
+        "projectUniqueName": "R:\\Bus-Ticket\\BTMS.DataLib\\BTMS.DataLib.csproj",
         "projectName": "BTMS.DataLib",
-        "projectPath": "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.DataLib\\BTMS.DataLib.csproj",
-        "packagesPath": "C:\\Users\\MD Rakibul Hasan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.DataLib\\obj\\",
+        "projectPath": "R:\\Bus-Ticket\\BTMS.DataLib\\BTMS.DataLib.csproj",
+        "packagesPath": "C:\\Users\\Md Rakibul Hasan\\.nuget\\packages\\",
+        "outputPath": "R:\\Bus-Ticket\\BTMS.DataLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MD Rakibul Hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Md Rakibul Hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -31,7 +30,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -43,15 +41,18 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.24, )"
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.25, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.24, )"
+              "version": "[3.1.25, )"
             }
           },
           "imports": [
@@ -69,25 +70,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.418\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.419\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.Data\\BTMS.Data.csproj": {
+    "R:\\Bus-Ticket\\BTMS.Data\\BTMS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.Data\\BTMS.Data.csproj",
+        "projectUniqueName": "R:\\Bus-Ticket\\BTMS.Data\\BTMS.Data.csproj",
         "projectName": "BTMS.Data",
-        "projectPath": "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.Data\\BTMS.Data.csproj",
-        "packagesPath": "C:\\Users\\MD Rakibul Hasan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.Data\\obj\\",
+        "projectPath": "R:\\Bus-Ticket\\BTMS.Data\\BTMS.Data.csproj",
+        "packagesPath": "C:\\Users\\Md Rakibul Hasan\\.nuget\\packages\\",
+        "outputPath": "R:\\Bus-Ticket\\BTMS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MD Rakibul Hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Md Rakibul Hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -100,10 +100,9 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.DataLib\\BTMS.DataLib.csproj": {
-                "projectPath": "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.DataLib\\BTMS.DataLib.csproj"
+              "R:\\Bus-Ticket\\BTMS.DataLib\\BTMS.DataLib.csproj": {
+                "projectPath": "R:\\Bus-Ticket\\BTMS.DataLib\\BTMS.DataLib.csproj"
               }
             }
           }
@@ -116,31 +115,42 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
-              "version": "[3.1.24, )"
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.24, )"
+              "version": "[3.1.25, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.24, )"
+              "version": "[3.1.25, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.24, )"
+              "version": "[3.1.25, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.24, )"
+              "version": "[3.1.25, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -165,7 +175,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.418\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.419\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.DataLib\\BTMS.DataLib.csproj": {}
+    "R:\\Bus-Ticket\\BTMS.DataLib\\BTMS.DataLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.DataLib\\BTMS.DataLib.csproj": {
+    "R:\\Bus-Ticket\\BTMS.DataLib\\BTMS.DataLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.DataLib\\BTMS.DataLib.csproj",
+        "projectUniqueName": "R:\\Bus-Ticket\\BTMS.DataLib\\BTMS.DataLib.csproj",
         "projectName": "BTMS.DataLib",
-        "projectPath": "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.DataLib\\BTMS.DataLib.csproj",
-        "packagesPath": "C:\\Users\\MD Rakibul Hasan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MD Rakibul Hasan\\Desktop\\BTMS\\BTMS.DataLib\\obj\\",
+        "projectPath": "R:\\Bus-Ticket\\BTMS.DataLib\\BTMS.DataLib.csproj",
+        "packagesPath": "C:\\Users\\Md Rakibul Hasan\\.nuget\\packages\\",
+        "outputPath": "R:\\Bus-Ticket\\BTMS.DataLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MD Rakibul Hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Md Rakibul Hasan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -47,11 +46,15 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.24, )"
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.25, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.24, )"
+              "version": "[3.1.25, )"
             }
           },
           "imports": [
@@ -69,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.418\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
